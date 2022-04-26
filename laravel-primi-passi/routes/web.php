@@ -12,7 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
-});
+    $parametro = [
+        'titolo' => 'questo-il-titolo',
+        'descrizione' => 'descrizione blablabla',
+    ];
+    return view('hello-laravel',$parametro);
+})->name('hello-laravel');
+
+Route::get('/pagina1', function () {
+    return view('pagina1');
+})->name('pagina1');
+
+Route::get('/pagina2', function () {
+    return view('pagina2');
+})->name('pagina2');
+
