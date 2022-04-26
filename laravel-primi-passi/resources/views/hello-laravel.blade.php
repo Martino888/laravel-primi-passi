@@ -9,7 +9,7 @@
 <body>
     <h1>{{$titolo}}</h1>
     <p>{{$descrizione}}</p>
-    @dd($titolo)
+    <!-- @dd($titolo) -->
 
     <a href="{{route('pagina1')}}">segui</a>
 
